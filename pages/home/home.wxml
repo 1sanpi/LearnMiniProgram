@@ -1,4 +1,12 @@
 <!--pages/home/home.wxml-->
+<!-- 5.通过内置组件直接展示用户的信息 -->
+<view class="userInfo">
+  <view class="userAvatar">
+    <open-data  type="userAvatarUrl"></open-data>
+  </view>
+    <open-data type="userNickName"></open-data>
+</view>
+
 <!-- 1.小程序的数据绑定: {{}} -> Mustache语法 -->
 <view>Hello {{name}}</view>
 <view>我的年龄：{{age}}</view>
@@ -11,3 +19,9 @@
 <button size="mini" bindtap="handleBtnClick">+</button>
 <button size="mini" bindtap="handleSubtraction">-</button>
 
+<!-- 4.通过按钮绑定事件获取用户信息 -->
+<button size="mini"
+        open-type="getUserInfo"
+        bindgetuserinfo="handleGetUserInfo">
+  获取授权
+</button>

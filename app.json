@@ -10,7 +10,8 @@
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "怦然心动",
     "backgroundColor": "#FCFCFC",
-    "backgroundTextStyle": "dark"
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
   },
   "tabBar": {
     "selectedColor": "#FFC0CB",
@@ -40,5 +41,6 @@
         "selectedIconPath": "assets/tabbar/profile_active.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap33.json"
 }
